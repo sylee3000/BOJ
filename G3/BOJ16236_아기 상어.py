@@ -21,21 +21,11 @@ for i in range(N):
             
 dx = [-1, 0, 0, 1]
 dy = [0, -1, 1, 0]
+queue = deque()
 
-def fish_in_world(world):
-    remain = False
-    for row in world:
-            for i in row:
-                if i < shark_size and i > 0:
-                    remain = True
-                    break
-    return remain
-
-while fish_in_world(world):
-    queue = deque()
+while True:
     queue.append((shark_row_index, shark_col_index, 0))
     visited = [[0] * N for _ in range(N)]
-    visited[shark_row_index][shark_col_index] = 0
     min_length = N ** 2
     target_idx = []
 
