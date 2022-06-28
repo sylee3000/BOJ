@@ -7,4 +7,4 @@ w = l.index(max(l))
 h = l.index(max(l[(w-1) % 6], l[(w+1) % 6]))
 small_w = l[(h+3) % 6]
 small_h = l[(w+3) % 6]
-print(K * (l[w] * l[h] - small_w * small_h))
+print(K * (l[w] * l[h] - small_w * small_h)) 
