@@ -12,4 +12,4 @@ while True:
                 dp[w][h] = dp[w-1][h-1] + dp[w-1][h]
             else:
                 dp[w][h] = dp[w-1][h] + dp[w][h-1]
-    print(dp[w][h])
+    print(dp[w][h]) 
