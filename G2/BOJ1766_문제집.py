@@ -14,7 +14,7 @@ for i in range(1, N+1):
     if indegree[i] == 0:
         q.append(i)
     
-res = []    
+res = []
 while q:
     x = heapq.heappop(q)
     res.append(x)
