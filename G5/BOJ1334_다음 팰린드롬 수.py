@@ -2,7 +2,7 @@ import math
 
 N = int(input())
 
-if math.log10(N + 1) == int(math.log10(N + 1)):
+if (N + 1) % (10 ** len(str(N))) == 0:
     print(N + 2)
 elif len(str(N)) == 1:
     print(N + 1)
